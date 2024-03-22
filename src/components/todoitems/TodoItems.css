@@ -12,6 +12,6 @@
     gap: 10px;
 }
 
-.deleteButton {
+span {
     cursor: pointer;
 }

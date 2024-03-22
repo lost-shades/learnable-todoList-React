@@ -30,9 +30,9 @@ export const TodoWrapper = () => {
                 {
                     todos.map((todoTask, index) =>(
                         <TodoItems 
-                            taskList={todoTask} 
+                            todoTask={todoTask} 
                             key= {index} 
-                            deleteTask = {deleteTask}
+                            deleteTask={deleteTask}
                         />
                     
                         ))

@@ -1,0 +1,17 @@
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #dededeee;
+}
+
+.task section {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.deleteButton {
+    cursor: pointer;
+}

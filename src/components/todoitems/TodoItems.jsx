@@ -1,19 +1,19 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
 import './TodoItems.css'
 
-const [editing, setEditing] = useState(taskList)
-
-export const TodoItems = ({taskList, deleteTask}) => {
+export const TodoItems = ({todoTask, deleteTask}) => {
+  // const [editing, setEditing] = useState(todoTask)
 
   return (
-    <section className="task">
-        {!editing && <p>{taskList.task}</p>}
-        {editing && <input type="text" value={taskList.task}/>}
+    <section className='task'>
+        <p>{todoTask.task}</p>
+        {/* {!editing && <p>{todoTask.task}</p>}
+        {editing && <input type="text" value={todoTask.task}/>} */}
         <section>
-            <span onClick={() => setEditing(prevVal => !prevVal)}>✏️</span>
-            <span onClick={() =>deleteTask(taskList.id)}>🚮</span>
-
+            <span>✏️</span>
+            <span onClick={() =>deleteTask(todoTask.id)}>🚮</span>
         </section>
+
     </section>
   )
 }

@@ -2,17 +2,14 @@ form {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* border: 5px solid purple; */
-    background-color: #edebeb;
-
 }
 
-input[type="text"] {
+input {
     width: 80%;
     padding: 10px;
     background-color: white;
     color: black;
-  }
+}
 
 button {
     background-color: #5e42fc;
